@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏔️ Pahadi Radio
 
-## Getting Started
+A modern ambient music experience inspired by the mountains, culture, and atmosphere of Uttarakhand.
 
-First, run the development server:
+Pahadi Radio combines **Pahadi music**, relaxing ambient sounds, animated mountain-inspired visuals, and a time-based atmosphere into a simple web experience.
+
+## ✨ Features
+
+- 🎵 Pahadi music through YouTube
+- 🔀 Random/shuffle song playback
+- ⏱️ Custom starting timestamp for each song
+- 🌧️ Ambient sounds:
+  - Birds
+  - Rain
+  - Fire
+  - Wind
+  - Crickets
+  - Frogs
+- 🌄 Uttarakhand-inspired visual atmosphere
+- 🌅 Day/night atmosphere based on the current time
+- ✨ Animated 3D environmental effects
+- 📱 Responsive design for desktop and mobile
+- 🎨 Gen-Z inspired modern UI
+- 💡 Floating Uttarakhand facts
+
+## 🛠️ Tech Stack
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Three.js**
+- **Framer Motion**
+- **Lucide React**
+- **YouTube Embed**
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/pahad-radio.git
+cd pahad-radio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```text
+pahad-radio/
+├── app/
+├── public/
+│   ├── images/
+│   └── sounds/
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎵 Adding Songs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Songs are configured in the application's song list.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Each song can have:
 
-## Deploy on Vercel
+```ts
+{
+  title: "Song Name",
+  artist: "Artist Name",
+  youtubeId: "VIDEO_ID",
+  start: 85
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`start` represents the starting position in seconds.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔊 Adding Ambient Sounds
+
+Ambient audio files can be placed inside:
+
+```text
+public/sounds/
+```
+
+and added to the ambient sound configuration.
+
+## 🌄 About
+
+Pahadi Radio is a personal project built to experiment with **Next.js, animation, Three.js, audio, and interactive UI design** while creating a digital atmosphere inspired by Uttarakhand.
+
+## 📌 Status
+
+🚧 **Active development**
+
+More songs, visual effects, and interactive features may be added over time.
+
+## 📄 License
+
+This project is intended for personal and educational use.
+
+Music and other third-party content remain the property of their respective owners.
